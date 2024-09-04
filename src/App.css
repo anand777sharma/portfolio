@@ -356,7 +356,11 @@ main {
 }
 
 .info_more-btn {
-  position: absolute;
+  position: absolute; 
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
   top: -15px;
   right: -15px;
   border-radius: 0 15px;
@@ -1494,6 +1498,9 @@ textarea.form-input::-webkit-resizer {
     top: -30px;
     right: -30px;
     padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .info_more-btn span {

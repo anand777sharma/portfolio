@@ -1,6 +1,7 @@
 import React from 'react'
+import { FaChevronDown } from 'react-icons/fa'
 
-const Header = ({data}) => {
+const Header = ({data,onClick}) => {
     return (
         <div className="sidebar-info">
 
@@ -14,10 +15,10 @@ const Header = ({data}) => {
                 <p className="title">{data?.position}</p>
             </div>
 
-            <button className="info_more-btn" data-sidebar-btn>
+            <button className="info_more-btn" onClick={onClick} >
                 <span>Show Contacts</span>
 
-                <ion-icon name="chevron-down"></ion-icon>
+              <FaChevronDown/>
             </button>
 
         </div>

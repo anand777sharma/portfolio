@@ -6,9 +6,15 @@ import Footer from './Footer';
 import { sidebarHeaderData, sidebarFooterData } from '../../util/util';
 
 const Sidebar = ({ sidebarData }) => {
+  
+  const toggleSidebar=()=>{
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.classList.toggle("active")
+  }
   return (
-    <aside className="sidebar" data-sidebar>
-      <Header data={sidebarHeaderData} />
+    <aside className="sidebar">
+      <Header data={sidebarHeaderData} onClick={toggleSidebar
+      } />
       <div className="sidebar-info_more">
         <Separator />
         <ul className="contacts-list">
