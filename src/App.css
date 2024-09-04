@@ -1306,6 +1306,7 @@ textarea.form-input::-webkit-resizer {
   background: var(--border-gradient-onyx);
   color: var(--orange-blue-crayola);
   display: flex;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -1856,6 +1857,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .form-btn {
+    margin-bottom: -50px;
     width: max-content;
     margin-left: auto;
   }
