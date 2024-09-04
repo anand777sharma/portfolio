@@ -3,7 +3,7 @@ import { FaChevronDown } from 'react-icons/fa'
 
 const Header = ({data,onClick}) => {
     return (
-        <div className="sidebar-info">
+        <div className="sidebar-info" >
 
             <figure className="avatar-box">
                 <img src={data?.profileUrl} alt={data?.name} width="80" />

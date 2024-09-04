@@ -2,14 +2,15 @@ import React from 'react'
 import Separator from '../components/Separator'
 import { GoDownload } from 'react-icons/go'
 import Timeline from '../components/Timeline/Timeline'
-import { CirtificationTimelineData, EducationTimelineData } from '../util/util'
+import { CirtificationTimelineData, EducationTimelineData, skillData } from '../util/util'
+import IconProgressCard from '../components/Card/IconProgressCard'
 const Resume = () => {
     return (
         <article className="resume" data-page="resume">
 
             <header>
                 <h2 className="h2 article-title">Resume</h2>
-                <h1><a target="_blank" href="https://drive.google.com/file/d/1Iem441uH-c2bonJNcoRECY919DuB-L-Y/view?usp=sharing">Download <GoDownload /></a></h1>
+                <p ><a className='form-btn' target="_blank" href="https://drive.google.com/file/d/1Iem441uH-c2bonJNcoRECY919DuB-L-Y/view?usp=sharing">Download <GoDownload /></a></p>
             </header>
 
             <Timeline data={EducationTimelineData}/>
@@ -18,7 +19,9 @@ const Resume = () => {
             <Separator /> */}
             <Timeline data={CirtificationTimelineData} />
             <Separator />
-            <section className="skill">
+            <IconProgressCard data={skillData} />
+
+            {/* <section className="skill">
 
                 <h3 className="h3 skills-title">My skills</h3>
 
@@ -78,7 +81,7 @@ const Resume = () => {
 
                 </ul>
 
-            </section>
+            </section> */}
 
         </article>
 
