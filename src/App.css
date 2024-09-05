@@ -335,8 +335,12 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
+.info-content {
+flex-shrink: 0;
+}
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -357,17 +361,17 @@ main {
 
 .info_more-btn {
   position: absolute; 
-  /* display: none; */
   display: flex;
   align-items: center;
   gap: 10px;
-  top: -15px;
-  right: -15px;
-  border-radius: 0 15px;
+  top: -20px;
+  right: -20px;
+  border-radius: 15px 0;
+  rotate: -90deg;
   font-size: 13px;
   color: var(--orange-blue-crayola);
   background: var(--border-gradient-onyx);
-  padding: 10px;
+  padding: 15px 13px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
   z-index: 1;
@@ -406,6 +410,59 @@ main {
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
+}
+.full_screen-btn {
+  position: absolute;
+  right: -20px;
+  bottom: -23px;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-blue-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px;
+  border-radius: 15px 0;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.full_screen-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.full_screen-btn svg {
+  font-size: 16px;
+}
+
+.full_screen-btn:hover {
+  background: var(--bg-gradient-blue-1);
+}
+
+.full_screen-btn:hover::before {
+  background: var(--bg-gradient-blue-2);
+}
+
+.full_screen-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.full_screen-btn:disabled:hover {
+  background: var(--border-gradient-onyx);
+}
+
+.full_screen-btn:disabled:hover::before {
+  background: var(--bg-gradient-jet);
 }
 
 .contacts-list {
@@ -1501,6 +1558,8 @@ textarea.form-input::-webkit-resizer {
     padding: 10px 15px;
     display: flex;
     align-items: center;
+    rotate: 0deg;
+    border-radius: 0 15px;
     gap: 10px;
   }
 
@@ -1509,10 +1568,12 @@ textarea.form-input::-webkit-resizer {
     font-size: var(--fs-8);
   }
 
-  .info_more-btn ion-icon {
+  .info_more-btn svg {
+    rotate: -90deg;
+  }
+  .full_screen-btn{
     display: none;
   }
-
   .separator {
     margin: 32px 0;
   }
