@@ -11,7 +11,7 @@ const Contact = () => {
 
             <section className="mapbox" data-mapbox>
                 {/* <figure> */}
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56961.73123754684!2d80.7973350281366!3d26.836510594960313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfe5d323b520b%3A0x2f011730d8522686!2sRajajipuram%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1725487393405!5m2!1sen!2sin" width="400" height="400"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56961.73123754684!2d80.7973350281366!3d26.836510594960313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfe5d323b520b%3A0x2f011730d8522686!2sRajajipuram%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1725487393405!5m2!1sen!2sin" width="400" height="400"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
             <section className="contact-form">
