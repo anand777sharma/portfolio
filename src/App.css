@@ -1918,7 +1918,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .form-btn {
-    margin-bottom: -50px;
+    margin-bottom: -10px;
     width: max-content;
     margin-left: auto;
   }
