@@ -15,10 +15,10 @@ const IconProgressCard = ({ data }) => {
                             {skill?.icon}
                         </div>
                         <div className="service-content-box">
-                            <h4 className="h4 service-item-title">{skill?.title} ({skill?.percentage})</h4>
-                            <div className="skill-progress-bg">
+                            <h4 className="h4 service-item-title">{skill?.title} </h4>
+                            {/* <div className="skill-progress-bg">
                                 <div className="skill-progress-fill" style={{ width: `${skill?.percentage}` }}></div>
-                            </div>
+                            </div> */}
                         </div>
                     </li>)}
             </ul>

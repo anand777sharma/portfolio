@@ -1,5 +1,7 @@
 import React from 'react'
-
+import { IoCodeOutline, IoEyeOutline } from 'react-icons/io5'
+import profile from '../assets/images/profile.png'
+import { projects } from '../util/util'
 const Portfolio = () => {
     return (
         <article className="portfolio" data-page="portfolio">
@@ -9,8 +11,7 @@ const Portfolio = () => {
             </header>
 
             <section className="projects">
-
-                <ul className="filter-list">
+                {/* <ul className="filter-list">
 
                     <li className="filter-item">
                         <button className="active" data-filter-btn>All</button>
@@ -25,7 +26,6 @@ const Portfolio = () => {
                     </li>
 
                 </ul>
-
                 <div className="filter-select-box">
 
                     <button className="filter-select" data-select>
@@ -54,102 +54,25 @@ const Portfolio = () => {
 
                     </ul>
 
-                </div>
+                </div> */}
 
                 <ul className="project-list">
-
-                    <li className="project-item  active" data-filter-item data-category="applications">
-                        <a href="https://github.com/harshit6392/Concpts">
-
+                    {projects?.map((project, index) =>
+                        <li key={index} className="project-item  active" data-filter-item data-category="applications">
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href={project?.githubUrl} target='_blank'> <div className="box" title='github'><IoCodeOutline /></div>  </a>
+                                    <a href={project?.deployedUrl} target='_blank'> <div className="box" title='see the site'><IoEyeOutline /></div>  </a>
                                 </div>
-
-                                <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy" />
+                                <img src={project?.image} alt={project?.title} loading="lazy" />
                             </figure>
-
-                            <h3 className="project-title">Android Blog Application</h3>
-
-                            <p className="project-category">Android App</p>
-
-                        </a>
-                    </li>
-
-                    <li className="project-item  active" data-filter-item data-category="applications">
-                        <a href="https://github.com/harshit6392/Weather-App">
-
-                            <figure className="project-img">
-                                <div className="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-
-                                <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy" />
-                            </figure>
-
-                            <h3 className="project-title">Advance Weather Application</h3>
-
-                            <p className="project-category">Android App</p>
-
-                        </a>
-                    </li>
-
-                    <li className="project-item  active" data-filter-item data-category="applications">
-                        <a href="https://github.com/harshit6392/ChatDemo">
-                            <figure className="project-img">
-                                <div className="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-
-                                <img src="./assets/images/project-10.jpg" alt="finance" loading="lazy" />
-                            </figure>
-
-                            <h3 className="project-title">Chat Application</h3>
-
-                            <p className="project-category">Android</p>
-
-                        </a>
-                    </li>
-
-                    <li className="project-item  active" data-filter-item data-category="web development">
-                        <a href="https://github.com/harshit6392/BankManagementSystem">
-
-                            <figure className="project-img">
-                                <div className="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-
-                                <img src="./assets/images/project-2.png" alt="orizon" loading="lazy" />
-                            </figure>
-
-                            <h3 className="project-title">Bank Management System</h3>
-
-                            <p className="project-category">Java based CLI version</p>
-
-                        </a>
-                    </li>
-
-                    <li className="project-item  active" data-filter-item data-category="web development">
-                        <a href="https://github.com/harshit6392/Web-Based-Student-Information-System">
-
-                            <figure className="project-img">
-                                <div className="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-
-                                <img src="./assets/images/project-7.png" alt="summary" loading="lazy" />
-                            </figure>
-
-                            <h3 className="project-title">Web Based Student Information System</h3>
-
-                            <p className="project-category">Web development</p>
-
-                        </a>
-                    </li>
+                            <h3 className="project-title">{project?.title}</h3>
+                            <p className="project-category">{project?.category}</p>
+                        </li>
+                    )}
                 </ul>
 
             </section>
-
         </article>
     )
 }
