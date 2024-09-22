@@ -1,6 +1,6 @@
 import { IoBookOutline, IoCalendarOutline, IoLocationOutline, IoMailOpenOutline, IoPhonePortraitOutline } from "react-icons/io5";
 import Profile from '../assets/images/profile.png'
-import { FaGitAlt, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGitAlt, FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiExpress, SiGithub, SiMongodb } from "react-icons/si";
 import { TbBrandBootstrap, TbBrandCss3, TbBrandJavascript, TbBrandLeetcode, TbBrandMysql, TbBrandRedux, TbTerminal2 } from "react-icons/tb";
 import { LiaReact } from "react-icons/lia";
@@ -12,6 +12,8 @@ import project2 from '../assets/images/project2.png'
 import project3 from '../assets/images/project3.png'
 import project4 from '../assets/images/project4.png'
 import project5 from '../assets/images/project5.png'
+
+export const resumeUrl = "https://docs.google.com/document/d/1Ew1wb9NNB0XSV_6QpxAG8IIydJA7ntX6Qh8Bw9xz3w0/edit?usp=sharing"
 
 export const sidebarData = [
     { to: "mailto:matrixmind777@gmail.com", icon: <IoMailOpenOutline />, title: "Email", description: "matrixmind777@gmail.com" },
@@ -30,6 +32,12 @@ export const sidebarFooterData = [
     { to: "https://www.linkedin.com/in/anand777sharma/", icon: <FaLinkedin /> },
     { to: "https://leetcode.com/anand777sharma/", icon: <TbBrandLeetcode /> },
     { to: "https://github.com/anand777sharma", icon: <SiGithub /> },
+    { to: "https://www.instagram.com/anand777sharma/", icon: <FaInstagram /> },
+    {
+        to: `https://wa.me/+919616406000?text= Hiii Anand, I'm sending this message 
+        via your portfolio. It's great to connect with you!`, icon: <FaWhatsapp />
+    },
+
 ]
 
 export const aboutData = {

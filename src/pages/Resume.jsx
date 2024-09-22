@@ -2,7 +2,7 @@ import React from 'react'
 import Separator from '../components/Separator'
 import { GoDownload } from 'react-icons/go'
 import Timeline from '../components/Timeline/Timeline'
-import { CirtificationTimelineData, EducationTimelineData, skillData } from '../util/util'
+import { CirtificationTimelineData, EducationTimelineData, resumeUrl, skillData } from '../util/util'
 import IconProgressCard from '../components/Card/IconProgressCard'
 const Resume = () => {
     return (
@@ -10,7 +10,7 @@ const Resume = () => {
 
             <header>
                 <h2 className="h2 article-title">Resume</h2>
-                <p ><a className='form-btn' target="_blank" href="https://drive.google.com/file/d/1Iem441uH-c2bonJNcoRECY919DuB-L-Y/view?usp=sharing">Download <GoDownload /></a></p>
+                <p ><a className='form-btn' target="_blank" href={resumeUrl}>Download <GoDownload /></a></p>
             </header>
 
             <Timeline data={EducationTimelineData}/>
