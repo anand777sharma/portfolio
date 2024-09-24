@@ -17,7 +17,7 @@ const About = ({ data }) => {
             </section>
             {/* all Skills */}
             <IconProgressCard data={skillData} />
-            <Slider data={SliderData} />
+            {/* <Slider data={SliderData} /> */}
         </article>
     )
 }
