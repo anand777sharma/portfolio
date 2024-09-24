@@ -890,7 +890,7 @@ main {
 
 }
 .fullScreen-modal-item-icon-box .box{
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: var(--jet);
   padding: 8px 12px;
   border-radius: 12px;
