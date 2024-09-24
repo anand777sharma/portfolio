@@ -1,15 +1,18 @@
 import React from 'react'
 import { FaChevronLeft } from 'react-icons/fa'
 import FullScreenToggleBtn from '../FullScreenBtn/FullScreenToggleBtn'
+import { Link } from 'react-router-dom'
 
 const Header = ({ data, onClick }) => {
-   
+
     return (
         <div className="sidebar-info" >
+            <Link to="">
+                <figure className="avatar-box">
+                    <img src={data?.profileUrl} alt={data?.name} width="80" />
+                </figure>
+            </Link>
 
-            <figure className="avatar-box">
-                <img src={data?.profileUrl} alt={data?.name} width="80" />
-            </figure>
 
             <div className="info-content">
                 <h1 className="name" title={data?.name}>{data?.name}</h1>
@@ -22,7 +25,7 @@ const Header = ({ data, onClick }) => {
 
                 <FaChevronLeft />
             </button>
-           <FullScreenToggleBtn/>
+            <FullScreenToggleBtn />
 
         </div>
     )

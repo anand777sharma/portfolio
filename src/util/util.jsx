@@ -19,7 +19,7 @@ export const sidebarData = [
     { to: "mailto:matrixmind777@gmail.com", icon: <IoMailOpenOutline />, title: "Email", description: "matrixmind777@gmail.com" },
     { to: "tel:+919616406000", icon: <IoPhonePortraitOutline />, title: "Phone", description: "+91-9616406000" },
     { to: "#", icon: <IoCalendarOutline />, title: "Graduation Year", description: "2023" },
-    { to: "#", icon: <IoLocationOutline />, title: "Location", description: "Lucknow, Uttar Pradesh, India" },
+    { to: "contact", icon: <IoLocationOutline />, title: "Location", description: "Lucknow, Uttar Pradesh, India" },
 
 ]
 
