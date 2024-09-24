@@ -10,7 +10,9 @@ const Portfolio = () => {
         imgSrc: '',
         imgAlt: '',
         title: '',
-        description: ''
+        description: '',
+        githubUrl: '',
+        deployedUrl: ''
     });
 
     const openModal = (project) => {
@@ -19,7 +21,9 @@ const Portfolio = () => {
             imgSrc: project.image,
             imgAlt: project.title,
             title: project.title,
-            text: project.description
+            text: project.description,
+            githubUrl: project?.githubUrl,
+            deployedUrl: project?.deployedUrl
         });
     };
 

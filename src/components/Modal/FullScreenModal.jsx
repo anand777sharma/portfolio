@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoClose } from 'react-icons/io5'
+import { IoClose, IoCodeOutline, IoEyeOutline } from 'react-icons/io5'
 
 const FullScreenModal = ({ modalData, closeModal }) => {
     return (
@@ -17,9 +17,14 @@ const FullScreenModal = ({ modalData, closeModal }) => {
                                 alt={modalData.imgAlt}
                                 width="80"
                             />
+                            <div className="fullScreen-modal-item-icon-box">
+                                <a href={modalData?.githubUrl} target='_blank'> <div className="box" title='github'><IoCodeOutline /></div>  </a>
+                                <a href={modalData?.deployedUrl} target='_blank'> <div className="box" title='see the site'><IoEyeOutline /></div>  </a>
+                            </div>
                         </figure>
 
                     </div>
+
                     <div className="modal-content fullScreen-modal-content">
                         <h4 className="h3 modal-title" >{modalData.title}</h4>
                         <div>
