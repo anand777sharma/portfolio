@@ -1,8 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoCodeOutline, IoEyeOutline } from 'react-icons/io5'
 import profile from '../assets/images/profile.png'
-import { projects } from '../util/util'
+import { projects, SliderData } from '../util/util'
+import FullScreenModal from '../components/Modal/FullScreenModal'
 const Portfolio = () => {
+
+    const [modalData, setModalData] = useState({
+        isOpen: false,
+        imgSrc: '',
+        imgAlt: '',
+        title: '',
+        description: ''
+    });
+
+    const openModal = (project) => {
+        setModalData({
+            isOpen: true,
+            imgSrc: project.image,
+            imgAlt: project.title,
+            title: project.title,
+            text: project.description
+        });
+    };
+
+    const closeModal = () => {
+        setModalData({ ...modalData, isOpen: false });
+    };
+
+
+
     return (
         <article className="portfolio" data-page="portfolio">
 
@@ -58,7 +84,7 @@ const Portfolio = () => {
 
                 <ul className="project-list">
                     {projects?.map((project, index) =>
-                        <li key={index} className="project-item  active" data-filter-item data-category="applications">
+                        <li key={index} className="project-item  active" data-filter-item data-category="applications" onClick={() => openModal(project)}>
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
                                     <a href={project?.githubUrl} target='_blank'> <div className="box" title='github'><IoCodeOutline /></div>  </a>
@@ -71,7 +97,8 @@ const Portfolio = () => {
                         </li>
                     )}
                 </ul>
-
+                {/* <Slider data={SliderData} /> */}
+                <FullScreenModal modalData={modalData} closeModal={closeModal} />
             </section>
         </article>
     )

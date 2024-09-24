@@ -58,64 +58,65 @@ export const aboutData = {
             Let’s connect and explore how we can collaborate to bring your next project to life!
         </p>
 
-    </>,
-    SliderData: {
-        title: "pata nahi kya likhe",
-        slides: [
-            {
-                title: "slide 1",
-                image: Profile,
-                description: <p>
-                    <strong>Challenge</strong>: During my MCA, I had to quickly learn Kotlin for a major project after primarily using Java.
-                    <br />
-                    <strong>Solution</strong>: Dedicated extra hours to online courses and hands-on practice.
-                    <br />
-                    <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
-                </p>
-            },
-            {
-                title: "slide 2",
-                image: Profile,
-                description: <p>
-                    <strong>Challenge</strong>: During my MCA, I had to quickly learn Kotlin for a major project after primarily using Java.
-                    <br />
-                    <strong>Solution</strong>: Dedicated extra hours to online courses and hands-on practice.
-                    <br />
-                    <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
-                </p>
-            },
-            {
-                title: "slide 3",
-                image: Profile,
-                description: <p>
-                    <strong>Challenge</strong>: During my MCA, I had to quickly learn Kotlin for a major project after primarily using Java.
-                    <br />
-                    <strong>Solution</strong>: Dedicated extra hours to online courses and hands-on practice.
-                    <br />
-                    <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
-                </p>
-            },
-            {
-                title: "slide 4",
-                image: Profile,
-                description: <p>
-                    <strong>Challenge</strong>: During my MCA, I had to quickly learn Kotlin for a major project after primarily using Java.
-                    <br />
-                    <strong>Solution</strong>: Dedicated extra hours to online courses and hands-on practice.
-                    <br />
-                    <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
-                    <strong>Challenge</strong>: During my MCA, I had to quickly learn Kotlin for a major project after primarily using Java.
-                    <br />
-                    <strong>Solution</strong>: Dedicated extra hours to online courses and hands-on practice.
-                    <br />
-                    <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
-                </p>
-            },
-
-
-        ]
-    }
+    </>
 }
+export const SliderData = {
+    title: "pata nahi kya likhe",
+    slides: [
+        {
+            title: "slide 1",
+            image: Profile,
+            description: <p>
+                <strong>Challenge</strong>: During my MCA, I had to quickly learn Kotlin for a major project after primarily using Java.
+                <br />
+                <strong>Solution</strong>: Dedicated extra hours to online courses and hands - on practice.
+                < br />
+                <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
+            </p >
+        },
+        {
+            title: "slide 2",
+            image: Profile,
+            description: <p>
+                <strong>Challenge</strong>: During my MCA, I had to quickly learn Kotlin for a major project after primarily using Java.
+                <br />
+                <strong>Solution</strong>: Dedicated extra hours to online courses and hands-on practice.
+                <br />
+                <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
+            </p>
+        },
+        {
+            title: "slide 3",
+            image: Profile,
+            description: <p>
+                <strong>Challenge</strong>: During my MCA, I had to quickly learn Kotlin for a major project after primarily using Java.
+                <br />
+                <strong>Solution</strong>: Dedicated extra hours to online courses and hands-on practice.
+                <br />
+                <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
+            </p>
+        },
+        {
+            title: "slide 4",
+            image: Profile,
+            description: <p>
+                <strong>Challenge</strong>: During my MCA, I had to quickly learn Kotlin for a major project after primarily using Java.
+                <br />
+                <strong>Solution</strong>: Dedicated extra hours to online courses and hands-on practice.
+                <br />
+                <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
+                <strong>Challenge</strong>: During my MCA, I had to quickly learn Kotlin for a major project after primarily using Java.
+                <br />
+                <strong>Solution</strong>: Dedicated extra hours to online courses and hands-on practice.
+                <br />
+                <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
+            </p>
+        },
+
+
+    ]
+}
+
 export const skillData = {
     title: "my Skills",
     skills: [

@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from '../components/Slider/Slider'
 import ImgDesCard from '../components/Card/ImgDesCard'
-import { skillData } from '../util/util'
+import { skillData, SliderData } from '../util/util'
 import IconProgressCard from '../components/Card/IconProgressCard'
 
 const About = ({ data }) => {
@@ -17,7 +17,7 @@ const About = ({ data }) => {
             </section>
             {/* all Skills */}
             <IconProgressCard data={skillData} />
-            {/* <Slider data={data?.SliderData} /> */}
+            <Slider data={SliderData} />
         </article>
     )
 }

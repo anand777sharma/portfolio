@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { IoClose } from 'react-icons/io5';
 import Quots from '../../assets/images/icon-quote.svg'
+// import Modal from '../Modal/Modal';
 
 const Slider = ({ data }) => {
   const [modalData, setModalData] = useState({
@@ -11,11 +12,11 @@ const Slider = ({ data }) => {
     description: ''
   });
 
- const openModal = (slide) => {
+  const openModal = (slide) => {
     setModalData({
       isOpen: true,
-      imgSrc: slide.image, 
-      imgAlt: slide.title,   
+      imgSrc: slide.image,
+      imgAlt: slide.title,
       title: slide.title,
       text: slide.description
     });
@@ -39,8 +40,8 @@ const Slider = ({ data }) => {
               >
                 <figure className="testimonials-avatar-box">
                   <img
-                    src={slide.image} 
-                    alt={slide.title}  
+                    src={slide.image}
+                    alt={slide.title}
                     width="60"
                   />
                 </figure>
@@ -84,6 +85,7 @@ const Slider = ({ data }) => {
           </section>
         </div>
       )}
+      {/* <Modal modalData={modalData} setModalData={setModalData} /> */}
     </>
   );
 };
