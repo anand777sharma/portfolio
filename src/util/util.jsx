@@ -12,6 +12,8 @@ import project2 from '../assets/images/project2.png'
 import project3 from '../assets/images/project3.png'
 import project4 from '../assets/images/project4.png'
 import project5 from '../assets/images/project5.png'
+import project6 from '../assets/images/project6.png'
+import project7 from '../assets/images/project7.png'
 
 export const resumeUrl = "https://docs.google.com/document/d/1Ew1wb9NNB0XSV_6QpxAG8IIydJA7ntX6Qh8Bw9xz3w0/edit?usp=sharing"
 
@@ -346,5 +348,48 @@ export const projects = [
                 </p>
             </>
         )
+    },
+    {
+        githubUrl: "#",
+        deployedUrl: "https://grow777me.netlify.app",
+        image: project6,
+        title: "Affiliate Management System",
+        category: "Marketing & Business Tools",
+        description: (
+            <>
+                <p>
+                    <strong>Affiliate Management System</strong> is a web application designed to streamline the process of managing and empowering affiliates. Built with <strong>Next.js</strong>, <strong>ShadCN UI</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, the platform ensures a modern and efficient user experience.
+                </p>
+                <p>
+                    This application enables users to register as affiliates and access their unique affiliate dashboard. Upon successful registration, affiliates can generate their personalized referral links directly from the dashboard. The platform integrates <strong>Firebase</strong> as its backend, ensuring secure and scalable data management.
+                </p>
+                <p>
+                    The intuitive design and seamless functionality make it easy for affiliates to join the program, manage their links, and track their activities. With a focus on performance and user satisfaction, this system offers a reliable solution for affiliate management.
+                </p>
+            </>
+        )
+        
+    },
+    {
+        githubUrl: "#",
+        deployedUrl: "https://restop.vercel.app/",
+        image: project7,
+        title: "Restaurant Digital MENU UI",
+        category: "Restaurant, Digital Menu",
+        description: (
+            <>
+                <p>
+                    <strong>Restaurant Digital Menu</strong> is an interactive web application crafted to enhance the dining experience for both customers and restaurant owners. Built using <strong>Next.js</strong>, <strong>ShadCN UI</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, it delivers a modern and user-friendly interface.
+                </p>
+                <p>
+                    This application allows users to explore the menu and select their preferred mode of service—<strong>Dine-In</strong>, <strong>Delivery</strong>, or <strong>Takeaway</strong>. Customers can conveniently generate their orders, including billing details, and send them directly to the restaurant owner’s <strong>WhatsApp</strong>. This seamless integration ensures fast and reliable communication between the customer and the restaurant.
+                </p>
+                <p>
+                    By digitizing the ordering process, this system helps restaurants interact with their customers efficiently, improve order management, and enhance the overall dining experience. With its intuitive design and practical functionality, the Restaurant Digital Menu is a valuable tool for modern restaurant operations.
+                </p>
+            </>
+        )
+        
+        
     },
 ]
