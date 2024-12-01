@@ -14,6 +14,8 @@ import project4 from '../assets/images/project4.png'
 import project5 from '../assets/images/project5.png'
 import project6 from '../assets/images/project6.png'
 import project7 from '../assets/images/project7.png'
+import project8 from '../assets/images/project8.png'
+import t1 from '../assets/images/t1.png'
 
 export const resumeUrl = "https://docs.google.com/document/d/1Ew1wb9NNB0XSV_6QpxAG8IIydJA7ntX6Qh8Bw9xz3w0/edit?usp=sharing"
 
@@ -44,7 +46,7 @@ export const sidebarFooterData = [
 
 export const aboutData = {
     mainContent: <>
-        <p>
+        {/* <p>
             Namaste! I'm <strong>Anand Sharma</strong>, a driven and enthusiastic <strong>B.Tech </strong> Graduate with a specialization in <strong>Full Stack Development</strong>.  I have completed my Graduation in <strong>2023</strong>. My journey from engineering to web development is fueled by a deep passion for technology and a love for creating digital solutions that are both functional and visually captivating.</p><p>
 
             I specialize in <strong>designing and developing websites</strong> that not only meet business objectives but also create memorable experiences for users. I’m dedicated to helping <strong>business owners</strong> and <strong>developers</strong> transform their ideas into reality by crafting websites that perfectly align with their vision and engage visitors, encouraging them to explore and return.</p><p>
@@ -58,6 +60,21 @@ export const aboutData = {
             I thrive on the challenge of turning complex problems into <strong>elegant</strong>, <strong>efficient solutions</strong>. Whether it’s <strong>enhancing user experience</strong>, <strong>boosting website performance</strong>, or <strong>developing</strong> entirely new features, I’m committed to delivering <strong>top-notch results</strong> that not only meet but exceed expectations.</p><p>
 
             Let’s connect and explore how we can collaborate to bring your next project to life!
+        </p> */}
+        <p>
+            Namaste! I'm <strong>Anand Sharma</strong>, a passionate <strong>Full Stack Developer</strong> and a driven <strong>B.Tech Graduate</strong> (Class of 2023). My journey into web development is fueled by a deep enthusiasm for technology and a commitment to crafting digital solutions that are both functional and visually appealing.
+        </p>
+        <p>
+            As a freelance developer, I specialize in <strong>designing and developing websites</strong> that align with business objectives while providing memorable user experiences. I am dedicated to helping <strong>business owners</strong> and <strong>entrepreneurs</strong> transform their ideas into impactful digital solutions that engage visitors and drive results.
+        </p>
+        <p>
+            My expertise spans the <strong>full stack</strong>, with a strong foundation in <strong>front-end</strong> and <strong>back-end technologies</strong>. Leveraging modern tools and frameworks, I focus on creating responsive, efficient, and user-friendly applications that align with my clients' visions and objectives.
+        </p>
+        <p>
+            I thrive on the challenge of turning complex problems into <strong>simple</strong>, <strong>effective solutions</strong>. From enhancing user experience to boosting website performance, I am committed to delivering results that exceed expectations.
+        </p>
+        <p>
+            Let’s connect and collaborate to bring your next project to life!
         </p>
 
     </>
@@ -114,6 +131,25 @@ export const SliderData = {
                 <strong>Outcome</strong>: Successfully mastered Kotlin, enhancing project efficiency.
             </p>
         },
+
+
+    ]
+}
+export const Testimonal = {
+    title: "What Other say About me",
+    slides: [
+        {
+            title: "Nikha Junction",
+            image: t1,
+            description: <p>
+                Anand ek amazing web developer hain jo apne clients ki zarurat ko achhi tarah samajhte hain. Mere website par kaam karte waqt unhone meri vision ko ekdum perfect tarike se reality mein badla. Shuruaat se leke final delivery tak Anand ne mujhe poori process mein involve rakha, technical aspects clearly samjhaye, aur ek aisa product deliver kiya jo mere expectations se kaafi zyada tha. Ab mera website sirf visually stunning hi nahi, balki highly functional aur user-friendly bhi hai. Agar aap ek professional aur talented developer dhoondh rahe hain jo quality work deliver kare, toh Anand ko zarur consider karein!
+                <br />
+                <strong>Name</strong>: Haji Abdul Khaliq
+                <br />
+                <strong>Email</strong>: nikahjunction@gmail.com
+                </p >
+        },
+
 
 
     ]
@@ -252,6 +288,72 @@ export const CirtificationTimelineData = {
 
 export const projects = [
     {
+        githubUrl: "#",
+        deployedUrl: "https://grow777me.netlify.app",
+        image: project6,
+        title: "Affiliate Management System",
+        category: "Marketing & Business Tools",
+        description: (
+            <>
+                <p>
+                    <strong>Affiliate Management System</strong> is a web application designed to streamline the process of managing and empowering affiliates. Built with <strong>Next.js</strong>, <strong>ShadCN UI</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, the platform ensures a modern and efficient user experience.
+                </p>
+                <p>
+                    This application enables users to register as affiliates and access their unique affiliate dashboard. Upon successful registration, affiliates can generate their personalized referral links directly from the dashboard. The platform integrates <strong>Firebase</strong> as its backend, ensuring secure and scalable data management.
+                </p>
+                <p>
+                    The intuitive design and seamless functionality make it easy for affiliates to join the program, manage their links, and track their activities. With a focus on performance and user satisfaction, this system offers a reliable solution for affiliate management.
+                </p>
+            </>
+        )
+
+    },
+    {
+        githubUrl: "#",
+        deployedUrl: "https://restop.vercel.app/",
+        image: project7,
+        title: "Restaurant Digital MENU UI",
+        category: "Restaurant, Digital Menu",
+        description: (
+            <>
+                <p>
+                    <strong>Restaurant Digital Menu</strong> is an interactive web application crafted to enhance the dining experience for both customers and restaurant owners. Built using <strong>Next.js</strong>, <strong>ShadCN UI</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, it delivers a modern and user-friendly interface.
+                </p>
+                <p>
+                    This application allows users to explore the menu and select their preferred mode of service—<strong>Dine-In</strong>, <strong>Delivery</strong>, or <strong>Takeaway</strong>. Customers can conveniently generate their orders, including billing details, and send them directly to the restaurant owner’s <strong>WhatsApp</strong>. This seamless integration ensures fast and reliable communication between the customer and the restaurant.
+                </p>
+                <p>
+                    By digitizing the ordering process, this system helps restaurants interact with their customers efficiently, improve order management, and enhance the overall dining experience. With its intuitive design and practical functionality, the Restaurant Digital Menu is a valuable tool for modern restaurant operations.
+                </p>
+            </>
+        )
+
+
+    },
+    {
+        githubUrl: "#",
+        deployedUrl: "https://nikahjunction.netlify.app/",
+        image: project8,
+        title: "Nikah Junction",
+        category: "Matrimonial Landing Page",
+        description: (
+            <>
+                <p>
+                    <strong>Matrimonial Landing Page</strong> is a modern web application designed to help individuals find their ideal life partner. Built using <strong>React</strong>, <strong>Vite</strong>, <strong>Tailwind CSS</strong>, and <strong>Firebase</strong>, the platform ensures a smooth and user-friendly experience for prospective users.
+                </p>
+                <p>
+                    This landing page enables users to fill out a detailed form and submit inquiries to express their preferences for a life partner. The application is designed to simplify the matchmaking process, connecting individuals with our clients, who specialize in finding the best match for each user based on their unique requirements and aspirations.
+                </p>
+                <p>
+                    With its elegant design and robust backend support, this platform offers a reliable solution for those seeking meaningful connections and a partner for life. Whether you are looking for a specific type of match or general guidance, the Matrimonial Landing Page provides a seamless way to begin your journey.
+                </p>
+            </>
+        )
+
+
+
+    },
+    {
         githubUrl: "https://github.com/anand777sharma/service-management",
         deployedUrl: "https://servicelist.netlify.app/",
         image: project1,
@@ -349,47 +451,5 @@ export const projects = [
             </>
         )
     },
-    {
-        githubUrl: "#",
-        deployedUrl: "https://grow777me.netlify.app",
-        image: project6,
-        title: "Affiliate Management System",
-        category: "Marketing & Business Tools",
-        description: (
-            <>
-                <p>
-                    <strong>Affiliate Management System</strong> is a web application designed to streamline the process of managing and empowering affiliates. Built with <strong>Next.js</strong>, <strong>ShadCN UI</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, the platform ensures a modern and efficient user experience.
-                </p>
-                <p>
-                    This application enables users to register as affiliates and access their unique affiliate dashboard. Upon successful registration, affiliates can generate their personalized referral links directly from the dashboard. The platform integrates <strong>Firebase</strong> as its backend, ensuring secure and scalable data management.
-                </p>
-                <p>
-                    The intuitive design and seamless functionality make it easy for affiliates to join the program, manage their links, and track their activities. With a focus on performance and user satisfaction, this system offers a reliable solution for affiliate management.
-                </p>
-            </>
-        )
-        
-    },
-    {
-        githubUrl: "#",
-        deployedUrl: "https://restop.vercel.app/",
-        image: project7,
-        title: "Restaurant Digital MENU UI",
-        category: "Restaurant, Digital Menu",
-        description: (
-            <>
-                <p>
-                    <strong>Restaurant Digital Menu</strong> is an interactive web application crafted to enhance the dining experience for both customers and restaurant owners. Built using <strong>Next.js</strong>, <strong>ShadCN UI</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, it delivers a modern and user-friendly interface.
-                </p>
-                <p>
-                    This application allows users to explore the menu and select their preferred mode of service—<strong>Dine-In</strong>, <strong>Delivery</strong>, or <strong>Takeaway</strong>. Customers can conveniently generate their orders, including billing details, and send them directly to the restaurant owner’s <strong>WhatsApp</strong>. This seamless integration ensures fast and reliable communication between the customer and the restaurant.
-                </p>
-                <p>
-                    By digitizing the ordering process, this system helps restaurants interact with their customers efficiently, improve order management, and enhance the overall dining experience. With its intuitive design and practical functionality, the Restaurant Digital Menu is a valuable tool for modern restaurant operations.
-                </p>
-            </>
-        )
-        
-        
-    },
+   
 ]
