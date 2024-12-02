@@ -289,7 +289,7 @@ export const CirtificationTimelineData = {
 export const projects = [
     {
         githubUrl: "#",
-        deployedUrl: "https://grow777me.netlify.app",
+        deployedUrl: "https://anand777.vercel.app/",
         image: project6,
         title: "Affiliate Management System",
         category: "Marketing & Business Tools",
