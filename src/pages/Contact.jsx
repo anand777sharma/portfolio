@@ -48,8 +48,6 @@
 import React, { useState } from 'react';
 import { BsSend } from 'react-icons/bs';
 import axios from 'axios';
-const password = import.meta.env.VITE_PASS;
-
 const Contact = () => {
     const [formData, setFormData] = useState({ fullname: '', email: '', message: '' });
     const [isSubmitting, setIsSubmitting] = useState(false); // State to track submission status
@@ -78,7 +76,7 @@ const Contact = () => {
         <article className="contact" data-page="contact">
             <header>
                
-                <h2 className="h2 article-title">Contact{password} </h2>
+                <h2 className="h2 article-title">Contact </h2>
             </header>
             <section className="mapbox" data-mapbox>
                 <iframe

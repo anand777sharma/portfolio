@@ -13,11 +13,11 @@ exports.handler = async (event) => {
         });
 
         await transporter.sendMail({
-            from: email,
-            to: `matrixmind777@gmail.com`,
+            from: 'matrixmind777@gmail.com',
+            to: `${email}`,
             subject: `Message from ${fullname}`,
             text: `<h1>
-               mast hai na ${password}
+               mast hai na 
             </h1>
             Name:${fullname}\n Email: ${email}\n\nMessage: ${message}`,
         });
