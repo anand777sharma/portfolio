@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const password = import.meta.env.VITE_PASS;
+// const password = import.meta.env.VITE_PASS;
 exports.handler = async (event) => {
     const { fullname, email, message } = JSON.parse(event.body);
 
@@ -8,13 +8,13 @@ exports.handler = async (event) => {
             service: 'gmail',
             auth: {
                 user: 'matrixmind777@gmail.com',
-                pass: `${password}`,
+                pass: 'ofzk nvvg kfsc juof',
             },
         });
 
         await transporter.sendMail({
             from: 'matrixmind777@gmail.com',
-            to: `matrixmind777@gmail.com`,
+            to: `${email}`,
             subject: `Message from ${fullname}`,
             text: `<h1>
                mast hai na 
