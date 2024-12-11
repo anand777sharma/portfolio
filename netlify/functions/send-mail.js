@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-
+const password = import.meta.env.VITE_PASS;
 exports.handler = async (event) => {
     const { fullname, email, message } = JSON.parse(event.body);
 
@@ -8,7 +8,7 @@ exports.handler = async (event) => {
             service: 'gmail',
             auth: {
                 user: 'matrixmind777@gmail.com',
-                pass: 'ofzk nvvg kfsc juof',
+                pass: password,
             },
         });
 
@@ -16,7 +16,7 @@ exports.handler = async (event) => {
             from: email,
             to: `matrixmind777@gmail.com`,
             subject: `Message from ${fullname}`,
-            text: `Email: ${email}\n\nMessage: ${message}`,
+            text: `Name:${fullname} Email: ${email}\n\nMessage: ${message}`,
         });
 
         return {
