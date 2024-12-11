@@ -8,7 +8,7 @@ exports.handler = async (event) => {
             service: 'gmail',
             auth: {
                 user: 'matrixmind777@gmail.com',
-                pass: password,
+                pass: `${password}`,
             },
         });
 
@@ -16,7 +16,10 @@ exports.handler = async (event) => {
             from: email,
             to: `matrixmind777@gmail.com`,
             subject: `Message from ${fullname}`,
-            text: `Name:${fullname} Email: ${email}\n\nMessage: ${message}`,
+            text: `<h1>
+               mast hai na ${password}
+            </h1>
+            Name:${fullname}\n Email: ${email}\n\nMessage: ${message}`,
         });
 
         return {

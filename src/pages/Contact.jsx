@@ -76,6 +76,7 @@ const Contact = () => {
     return (
         <article className="contact" data-page="contact">
             <header>
+               
                 <h2 className="h2 article-title">Contact</h2>
             </header>
             <section className="mapbox" data-mapbox>
@@ -87,6 +88,7 @@ const Contact = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
             </section>
+            
             <section className="contact-form">
                 <h3 className="h3 form-title">Contact Form</h3>
                 <form className="form" onSubmit={handleSubmit}>
