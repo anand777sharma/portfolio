@@ -287,27 +287,27 @@ export const CirtificationTimelineData = {
 
 
 export const projects = [
-    {
-        githubUrl: "#",
-        deployedUrl: "https://anand777.vercel.app/",
-        image: project6,
-        title: "Affiliate Management System",
-        category: "Marketing & Business Tools",
-        description: (
-            <>
-                <p>
-                    <strong>Affiliate Management System</strong> is a web application designed to streamline the process of managing and empowering affiliates. Built with <strong>Next.js</strong>, <strong>ShadCN UI</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, the platform ensures a modern and efficient user experience.
-                </p>
-                <p>
-                    This application enables users to register as affiliates and access their unique affiliate dashboard. Upon successful registration, affiliates can generate their personalized referral links directly from the dashboard. The platform integrates <strong>Firebase</strong> as its backend, ensuring secure and scalable data management.
-                </p>
-                <p>
-                    The intuitive design and seamless functionality make it easy for affiliates to join the program, manage their links, and track their activities. With a focus on performance and user satisfaction, this system offers a reliable solution for affiliate management.
-                </p>
-            </>
-        )
+    // {
+    //     githubUrl: "#",
+    //     deployedUrl: "https://anand777.vercel.app/",
+    //     image: project6,
+    //     title: "Affiliate Management System",
+    //     category: "Marketing & Business Tools",
+    //     description: (
+    //         <>
+    //             <p>
+    //                 <strong>Affiliate Management System</strong> is a web application designed to streamline the process of managing and empowering affiliates. Built with <strong>Next.js</strong>, <strong>ShadCN UI</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, the platform ensures a modern and efficient user experience.
+    //             </p>
+    //             <p>
+    //                 This application enables users to register as affiliates and access their unique affiliate dashboard. Upon successful registration, affiliates can generate their personalized referral links directly from the dashboard. The platform integrates <strong>Firebase</strong> as its backend, ensuring secure and scalable data management.
+    //             </p>
+    //             <p>
+    //                 The intuitive design and seamless functionality make it easy for affiliates to join the program, manage their links, and track their activities. With a focus on performance and user satisfaction, this system offers a reliable solution for affiliate management.
+    //             </p>
+    //         </>
+    //     )
 
-    },
+    // },
     {
         githubUrl: "#",
         deployedUrl: "https://restop.vercel.app/",
@@ -431,26 +431,26 @@ export const projects = [
             </>
         )
     },
-    {
-        githubUrl: "https://github.com/anand777sharma/videostriming",
-        deployedUrl: "https://videostreamer4you.netlify.app/",
-        image: project5,
-        title: "Videostreaming",
-        category: "Media, Streaming, Entertainment",
-        description: (
-            <>
-                <p>
-                    <strong>Videostreaming</strong> is an online video streaming platform built using <strong>React</strong>, offering users a smooth and engaging experience for watching videos. The platform integrates with <strong>RapidAPI</strong> to fetch and stream content dynamically, ensuring fast and reliable video delivery.
-                </p>
-                <p>
-                    This application allows users to browse a wide range of video content, from movies to user-generated content, with an easy-to-navigate interface and a seamless playback experience. The application leverages modern front-end technologies to create a responsive and intuitive design.
-                </p>
-                <p>
-                    By utilizing <strong>RapidAPI</strong>, the app ensures real-time access to a vast database of videos and provides features such as video search, filtering, and smooth video playback. Whether you're watching on desktop or mobile, this app delivers a consistent streaming experience.
-                </p>
-            </>
-        )
-    },
+    // {
+    //     githubUrl: "https://github.com/anand777sharma/videostriming",
+    //     deployedUrl: "https://videostreamer4you.netlify.app/",
+    //     image: project5,
+    //     title: "Videostreaming",
+    //     category: "Media, Streaming, Entertainment",
+    //     description: (
+    //         <>
+    //             <p>
+    //                 <strong>Videostreaming</strong> is an online video streaming platform built using <strong>React</strong>, offering users a smooth and engaging experience for watching videos. The platform integrates with <strong>RapidAPI</strong> to fetch and stream content dynamically, ensuring fast and reliable video delivery.
+    //             </p>
+    //             <p>
+    //                 This application allows users to browse a wide range of video content, from movies to user-generated content, with an easy-to-navigate interface and a seamless playback experience. The application leverages modern front-end technologies to create a responsive and intuitive design.
+    //             </p>
+    //             <p>
+    //                 By utilizing <strong>RapidAPI</strong>, the app ensures real-time access to a vast database of videos and provides features such as video search, filtering, and smooth video playback. Whether you're watching on desktop or mobile, this app delivers a consistent streaming experience.
+    //             </p>
+    //         </>
+    //     )
+    // },
    
 ]
 
